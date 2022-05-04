@@ -273,11 +273,12 @@ a {
 }
 
 .videos {
-  padding: 30px 75px 0;
+  padding: 30px 75px 70px;
   overflow: scroll;
 }
 
 .videos > div {
+  padding-right: 10px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -290,6 +291,10 @@ a {
   background-color: #fffbf9;
   text-align: left;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.videos .spacer {
+  flex: 0 0 30px;
+  height: 100%;
 }
 
 .video > div {
@@ -310,7 +315,7 @@ a {
 }
 
 .cta {
-  margin-top: 143px;
+  margin-top: 73px;
   background-color: #e27152;
   height: 560px;
   position: relative;

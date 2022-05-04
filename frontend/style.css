@@ -305,38 +305,31 @@ a {
 }
 
 .cta {
+  margin-top: 143px;
   background-color: #e27152;
-  width: 100% !important;
-  margin-top: 2rem;
+  height: 560px;
+  position: relative;
+  padding: 75px;
+  overflow: hidden;
 }
 
-.cta-box {
-  width: 85%;
-  margin: 0 auto;
-  padding: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.cta h2 {
+  color: #F4ECE8;
+  font-size: 45px;
+  font-weight: 500;
 }
 
-.cta-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
+.cta form {
+  max-width: 533px;
 }
 
-.cta-left > h2 {
-  color: white;
-  font-size: 2rem;
-  font-weight: normal;
-}
-
-input {
-  border-radius: 12px;
+.cta input {
+  margin-top: 18px;
+  box-sizing: border-box;
+  border-radius: 15px;
   border: 2px solid #f4ece8;
-  padding: 10px;
-  font-size: 1.2rem;
+  padding: 15px;
+  font-size: 21px;
   width: 100%;
   background: transparent;
   outline: none;
@@ -345,6 +338,11 @@ input {
 
 input:active {
   outline: none;
+}
+
+.email-octopus-form-row-hp {
+  position: absolute;
+  left: -5000px;
 }
 
 ::placeholder {
@@ -362,10 +360,25 @@ input:active {
   opacity: 0.6;
 }
 
-.cta-left > .reg-btn {
+.cta button {
+  margin-top: 90px;
+  cursor: pointer;
   background-color: #f4ece8;
   color: #31302f;
-  padding: 1.1rem 1.5rem;
+  padding: 17px 30px;
+  font-size: 21px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: none;
+}
+.cta button:hover {
+  background-color: #FFFBF9;
+}
+
+.cta > img {
+  position: absolute;
+  bottom: -64px;
+  right: -64px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

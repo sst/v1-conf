@@ -260,6 +260,9 @@ a {
 .btm p:first-child {
   opacity: 0.6;
 }
+.btm p:last-child {
+  line-height: 1.6;
+}
 
 .videos-title {
   margin: 110px 0 0 75px;

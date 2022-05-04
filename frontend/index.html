@@ -360,15 +360,13 @@
     </nav>
     <script>
       // Set the date we're counting down to
-      let countDownDate = new Date("May 17, 2022 15:37:25").getTime();
-
-      // Update the count down every 1 second
-      let x = setInterval(function () {
+      let countDownDate = new Date("May 17, 2022 09:00:00 AM PDT").getTime();
+      let updateCountDown = function () {
         // Get today's date and time
         let now = new Date().getTime();
 
         // Find the distance between now and the count down date
-        let distance = countDownDate - now;
+        let distance = Math.max(0, countDownDate - now);
 
         // Time calculations for days, hours, minutes and seconds
         let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -384,7 +382,11 @@
         document.getElementById("hours").innerHTML = hours;
         document.getElementById("min").innerHTML = minutes;
         document.getElementById("secs").innerHTML = seconds;
-      }, 1000);
+      };
+
+      // Update the count down every 1 second
+      updateCountDown();
+      let x = setInterval(updateCountDown, 1000);
 
       function nav() {
         let x = document.getElementById("menu-btm");

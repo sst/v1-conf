@@ -1,5 +1,5 @@
 {
-  "name": "my-sst-app",
+  "name": "sst-v1-conf",
   "region": "us-east-1",
   "main": "stacks/index.ts"
 }

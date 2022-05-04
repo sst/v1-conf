@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#F4ECE8">
     <link rel="stylesheet" href="style.css" />
     <meta
       name="viewport"
@@ -10,24 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
   </head>
   <body>
     <nav class="header">
-      <img src="/assets/sst.svg" class="logo" alt="" />
+      <a class="logo" href="/">
+        <img src="/assets/sst.svg" alt="" />
+      </a>
       <img onclick="nav()" id="menu" src="/assets/menu.svg" alt="" />
       <div class="nav-right">
-        <a href="https://github.com/serverless-stack/serverless-stack">
+        <a class="social" href="https://github.com/serverless-stack/serverless-stack">
           <img src="/assets/github.svg" alt="" width="180" />
         </a>
-        <a href="https://serverless-stack.com/slack">
+        <a class="social" href="https://serverless-stack.com/slack">
           <img src="/assets/slack.svg" alt="" width="30" />
         </a>
-        <a href="#speakers">Speakers</a>
-        <a href="#features">Features</a>
+        <a class="links" href="#speakers">Speakers</a>
+        <a class="links" href="#features">Features</a>
         <a href="#register" class="reg-btn">Register</a>
       </div>
     </nav>
@@ -45,11 +48,11 @@
 
     <div class="hero">
       <div class="hero-left">
-        <h3>May 10 9am PDT</h3>
+        <h3>May 17, 9am PDT</h3>
         <h1>SST 1.0 Conf</h1>
         <hr />
         <p>
-          Making it easy to build full-stack serverless apps, join the conf!
+          A virtual event celebrating SST's v1 launch!
         </p>
         <a href="#register" class="reg-btn">Register</a>
       </div>
@@ -60,20 +63,20 @@
       <p>We can`t wait to show you what we`ve got prepared</p>
       <div class="boxes">
         <p class="box">
-          <span id="days">10</span>
-          <span>Days</span>
+          <span id="days">-</span>
+          <span>days</span>
         </p>
         <p class="box">
-          <span id="hours">10</span>
-          <span>Hours</span>
+          <span id="hours">-</span>
+          <span>hours</span>
         </p>
         <p class="box">
-          <span id="min">10</span>
-          <span>Minutes</span>
+          <span id="min">-</span>
+          <span>minutes</span>
         </p>
         <p class="box">
-          <span id="secs">10</span>
-          <span>Seconds</span>
+          <span id="secs">-</span>
+          <span>seconds</span>
         </p>
       </div>
     </div>
@@ -88,19 +91,19 @@
     </div>
 
     <h2 class="speaker-title" id="speakers">Speakers</h2>
-    <br />
+
     <div class="speakers">
       <div class="speaker">
         <img
           class="pic"
-          src="https://avatars.githubusercontent.com/u/37635275?v=4"
+          src="/assets/alberthoxha97.jpeg"
           alt=""
         />
         <div class="speaker-left">
           <p class="name">Albert Hoxha</p>
           <p class="role">Software engineer,</p>
           <p class="company">Shell Recharge Solutions</p>
-          <div>
+          <div class="social">
             <a href="https://github.com/alberthoxha97">
               <img src="/assets/github-orange.svg" alt="" width="30" />
             </a>
@@ -110,8 +113,8 @@
           </div>
         </div>
         <div class="btm">
-          <p style="opacity: 60%">Speech:</p>
-          <p>"How to code"</p>
+          <p>Talk:</p>
+          <p>&ldquo;How to code&rdquo;</p>
         </div>
       </div>
       <div class="speaker">
@@ -124,7 +127,7 @@
           <p class="name">Kevin Baker</p>
           <p class="role">Principal Platform Architect,</p>
           <p class="company">Analog Devices</p>
-          <div>
+          <div class="social">
             <a href="https://github.com/kevbaker">
               <img src="/assets/github-orange.svg" alt="" width="30" />
             </a>
@@ -134,8 +137,8 @@
           </div>
         </div>
         <div class="btm">
-          <p style="opacity: 60%">Speech:</p>
-          <p>"How to code"</p>
+          <p>Talk:</p>
+          <p>&ldquo;How to code&rdquo;</p>
         </div>
       </div>
       <div class="speaker">
@@ -148,7 +151,7 @@
           <p class="name">Luke Hedger</p>
           <p class="role">Software Engineer,</p>
           <p class="company">The LEGO Group</p>
-          <div>
+          <div class="social">
             <a href="https://github.com/lukehedger">
               <img src="/assets/github-orange.svg" alt="" width="30" />
             </a>
@@ -158,8 +161,8 @@
           </div>
         </div>
         <div class="btm">
-          <p style="opacity: 60%">Speech:</p>
-          <p>"How to code"</p>
+          <p>Talk:</p>
+          <p>&ldquo;How to code&rdquo;</p>
         </div>
       </div>
       <div class="speaker">

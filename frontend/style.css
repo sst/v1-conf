@@ -3,11 +3,22 @@
   scroll-behavior: smooth;
 }
 
+html {
+  background-color: #F4ECE8;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-image: url("/assets/bg.svg");
+  color: #31302F;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
 }
 
 #menu,
@@ -19,58 +30,71 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 30px;
 }
 
-.logo {
-  width: 100px;
+.logo img {
+  display: block;
+  height: 40px;
 }
 
 .nav-right {
   display: flex;
-  gap: 2rem;
   align-items: center;
 }
+.nav-right a:not(:last-child) {
+  margin-right: 30px;
+}
 
-a {
-  text-decoration: none;
-  color: #000;
+.nav-right a.social:first-child {
+  margin-right: 18px;
+}
+.nav-right a.social:hover {
+  opacity: 0.8;
+}
+.nav-right a.social img {
+  display: block;
+}
+
+.nav-right a.links:hover {
+  opacity: 0.7;
 }
 
 .reg-btn {
   background-color: #e27152;
+  color: #FFFBF9;
   border-radius: 12px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border: none;
-  color: white;
+}
+.reg-btn:hover {
+  background-color: #CD674B;
 }
 
 .hero {
+  margin: 20px auto;
+  position: relative;
+  height: 629px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 90%;
-  margin: 10px auto;
-  gap: 5rem;
 }
 
 .hero-left > h3 {
+  margin: 0 0 0 60px;
   color: #e27152;
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 1rem;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -2px;
 }
 
 .hero-left > h1 {
-  font-size: 5rem;
+  margin: 0 0 0 60px;
+  font-size: 90px;
   color: #395c6b;
-  line-height: 3rem;
-}
-
-.hero-left > p {
-  color: #395c6b;
-  font-size: 1.3rem;
-  margin: 40px 0;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -3px;
 }
 
 .hero-left > hr {
@@ -78,43 +102,62 @@ a {
   width: 100%;
 }
 
+.hero-left > p {
+  margin: 40px 0 0 60px;;
+  color: #395c6b;
+  font-size: 24px;
+}
+
 .hero-left > a {
-  padding: 1rem 3rem;
-  font-size: 1.2rem;
+  margin: 45px 0 0 60px;
+  padding: 17px 30px;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.hero > img {
+  right: 30px;
+  top: 0;
+  position: absolute;
 }
 
 .countdown {
-  width: 85%;
-  margin: 130px auto;
+  margin: 30px 30px 0;
   text-align: center;
 }
 .countdown > p {
-  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .boxes {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  margin: 0 auto;
-  gap: 2rem;
+  gap: 18px;
 }
 
 .box {
+  margin: 0;
   background-color: #fffbf9;
   border-radius: 12px;
   border: none;
   color: #395c6b;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 3rem 4rem;
+  width: 219px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .box > #days,
 #hours,
 #min,
 #secs {
-  font-size: 3rem;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -126,33 +169,32 @@ a {
 
 .prepare {
   width: 85%;
-  margin: 20px auto;
+  margin: 150px auto 0;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .prepare > h2 {
   color: #e27152;
-  font-size: 2rem;
-  font-weight: normal;
+  font-size: 45px;
+  font-weight: 500;
 }
 
 .prepare > p {
-  font-size: 1.2rem;
-  line-height: 2.5rem;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.9;
 }
 
 .speaker-title {
-  width: 85%;
-  padding: 3rem 0;
-  margin: 0 auto;
-  font-size: 3rem;
+  margin: 150px 0 0 75px;
+  font-size: 75px;
+  font-weight: 500;
+  line-height: 1.3;
   color: #395c6b;
 }
 
 .speakers {
-  width: 85%;
-  margin: 30px auto;
+  margin: 75px 75px 0;
   text-align: center;
   display: grid;
   grid-template-columns: auto auto;
@@ -161,15 +203,16 @@ a {
 .speaker {
   background-color: #fffbf9;
   border-radius: 20px;
+  padding: 18px;
   position: relative;
-  width: 75%;
+  width: 435px;
   margin: 2rem auto;
 }
 
 .pic {
   position: absolute;
-  top: -3rem;
-  left: -2rem;
+  top: -30px;
+  left: -30px;;
   width: 30%;
   border-radius: 20px;
   aspect-ratio: 3/4;
@@ -177,32 +220,45 @@ a {
 }
 
 .speaker-left {
+  margin-left: 112px;
   text-align: left;
-  margin-left: 28%;
 }
 
 .name {
-  font-size: 1.4rem;
-  line-height: 1rem;
-  color: #31302f;
-  margin: 10px 0 5px 0;
+  margin: 0 0 5px;
+  font-size: 27px;
+  font-weight: 500;
 }
 
 .role {
+  margin: 0 0 5px;
   opacity: 60%;
-  margin: 0;
+  font-size: 15px;
 }
 
 .company {
-  color: #31302f;
   margin: 0;
-  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.social {
+  margin-top: 27px;
+}
+.social a {
+  display: inline-block;
+}
+.social img {
+  display: block;
 }
 
 .btm {
-  text-align: left;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 16px;
+  text-align: left;
+}
+.btm p:first-child {
+  opacity: 0.6;
 }
 
 .videos {

@@ -26,7 +26,7 @@ a {
   display: none;
 }
 
-.header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +63,7 @@ a {
 .reg-btn {
   background-color: #e27152;
   color: #FFFBF9;
-  border-radius: 12px;
+  border-radius: 9px;
   padding: 10px 20px;
   border: none;
 }
@@ -112,6 +112,7 @@ a {
   margin: 45px 0 0 60px;
   padding: 17px 30px;
   font-size: 24px;
+  border-radius: 15px;
   display: inline-block;
 }
 
@@ -141,7 +142,7 @@ a {
 .box {
   margin: 0;
   background-color: #fffbf9;
-  border-radius: 12px;
+  border-radius: 15px;
   border: none;
   color: #395c6b;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -202,7 +203,7 @@ a {
 
 .speaker {
   background-color: #fffbf9;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 18px;
   position: relative;
   width: 435px;
@@ -214,7 +215,7 @@ a {
   top: -30px;
   left: -30px;;
   width: 30%;
-  border-radius: 20px;
+  border-radius: 15px;
   aspect-ratio: 3/4;
   object-fit: cover;
 }
@@ -272,16 +273,18 @@ a {
 }
 
 .videos {
-  margin: 30px 75px 0;
-  text-align: center;
+  padding: 30px 75px 0;
+  overflow: scroll;
+}
+
+.videos > div {
   display: flex;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap;
 }
 
 .video {
-  width: 400px;
+  flex: 0 0 500px;
   border-radius: 15px;
   overflow: hidden;
   background-color: #fffbf9;
@@ -290,7 +293,7 @@ a {
 }
 
 .video > div {
-  height: 225px;
+  height: 281px;
 }
 
 .video iframe {
@@ -302,6 +305,8 @@ a {
 .video > p {
   margin: 25px;
   line-height: 1.2;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .cta {

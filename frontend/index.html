@@ -17,391 +17,388 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a class="logo" href="/">
-        <img src="/assets/sst.svg" alt="" />
-      </a>
-      <img onclick="nav()" id="menu" src="/assets/menu.svg" alt="" />
-      <div class="nav-right">
-        <a class="social" href="https://github.com/serverless-stack/serverless-stack">
-          <img src="/assets/github.svg" alt="" width="180" />
+    <div class="content-wrapper">
+      <nav class="navbar">
+        <a class="logo" href="/">
+          <img src="/assets/sst.svg" alt="" />
         </a>
-        <a class="social" href="https://serverless-stack.com/slack">
-          <img src="/assets/slack.svg" alt="" width="30" />
-        </a>
-        <a class="links" href="#speakers">Speakers</a>
-        <a class="links" href="#features">SST v1</a>
-        <a href="#register" class="reg-btn">Register</a>
-      </div>
-    </nav>
-    <div id="menu-btm">
-      <a href="https://github.com/serverless-stack/serverless-stack">
-        <img src="/assets/github.svg" alt="" width="180" />
-      </a>
-      <a href="https://serverless-stack.com/slack">
-        <img src="/assets/slack.svg" alt="" width="30" />
-      </a>
-      <a href="#speakers">Speakers</a>
-      <a href="#features">SST v1</a>
-      <a href="#register" class="reg-btn">Register</a>
-    </div>
+        <div class="nav-right">
+          <a class="social" href="https://github.com/serverless-stack/serverless-stack">
+            <img src="/assets/github.svg" alt="" width="180" />
+          </a>
+          <a class="social" href="https://serverless-stack.com/slack">
+            <img src="/assets/slack.svg" alt="" width="30" />
+          </a>
+          <a class="links" href="#speakers">Speakers</a>
+          <a class="links" href="#features">SST v1</a>
+          <a href="#register" class="reg-btn">Register</a>
+        </div>
+        <div class="nav-right-mobile">
+          <a class="links" href="#speakers">Speakers</a>
+        </div>
+      </nav>
 
-    <div class="hero">
-      <div class="hero-left">
-        <h3>May 17, 9am PDT</h3>
-        <h1>SST 1.0 Conf</h1>
-        <hr />
+      <div class="hero">
+        <div class="hero-left">
+          <h3>May 17, 9am PDT</h3>
+          <h1>SST 1.0 Conf</h1>
+          <hr />
+          <p>
+            A virtual event celebrating SST's v1 launch!
+          </p>
+          <a href="#register" class="reg-btn">Register</a>
+        </div>
+        <img src="/assets/hero1.svg" alt="" />
+      </div>
+
+      <div class="countdown">
+        <p>We can`t wait to show you what we`ve got prepared</p>
+        <div class="boxes">
+          <p class="box">
+            <span id="days">-</span>
+            <span>days</span>
+          </p>
+          <p class="box">
+            <span id="hours">-</span>
+            <span>hours</span>
+          </p>
+          <p class="box">
+            <span id="min">-</span>
+            <span>minutes</span>
+          </p>
+          <p class="box">
+            <span id="secs">-</span>
+            <span>seconds</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="prepare">
+        <h2>What we prepare</h2>
         <p>
-          A virtual event celebrating SST's v1 launch!
-        </p>
-        <a href="#register" class="reg-btn">Register</a>
-      </div>
-      <img src="/assets/hero1.svg" alt="" />
-    </div>
-
-    <div class="countdown">
-      <p>We can`t wait to show you what we`ve got prepared</p>
-      <div class="boxes">
-        <p class="box">
-          <span id="days">-</span>
-          <span>days</span>
-        </p>
-        <p class="box">
-          <span id="hours">-</span>
-          <span>hours</span>
-        </p>
-        <p class="box">
-          <span id="min">-</span>
-          <span>minutes</span>
-        </p>
-        <p class="box">
-          <span id="secs">-</span>
-          <span>seconds</span>
+          We are going to be using AWS Lambda, Amazon API Gateway, and a host of
+          other AWS services to create our application. AWS Lambda is a compute
+          service that lets you run code without provisioning or managing servers.
         </p>
       </div>
-    </div>
 
-    <div class="prepare">
-      <h2>What we prepare</h2>
-      <p>
-        We are going to be using AWS Lambda, Amazon API Gateway, and a host of
-        other AWS services to create our application. AWS Lambda is a compute
-        service that lets you run code without provisioning or managing servers.
-      </p>
-    </div>
+      <h2 class="speaker-title" id="speakers">Speakers</h2>
 
-    <h2 class="speaker-title" id="speakers">Speakers</h2>
+      <div class="speakers">
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/albert-hoxha.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Albert Hoxha</p>
+            <p class="role">Software engineer</p>
+            <p class="company">Shell Recharge Solutions</p>
+            <div class="social">
+              <a href="https://github.com/alberthoxha97">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/albert-hoxha-3045b8174">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>&ldquo;Why SST is a natural choice for developers&rdquo;</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/luke-hedger.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Luke Hedger</p>
+            <p class="role">Software Engineer</p>
+            <p class="company">The LEGO Group</p>
+            <div class="social">
+              <a href="https://github.com/lukehedger">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.twitter.com/level_out/">
+                <img src="/assets/twitter.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>Coming soon</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/tamara-dottin.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Tamara Dottin</p>
+            <p class="role">Founding Engineer</p>
+            <p class="company">Acre</p>
+            <div class="social">
+              <a href="https://twitter.com/tamaradottin">
+                <img src="/assets/twitter.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/tamara-dottin-bb4bb68">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>&ldquo;Managing environments with ease using SST&rdquo;</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/zachary-mckenna.png"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Zachary McKenna</p>
+            <p class="role">Software Engineer</p>
+            <p class="company">Comcast</p>
+            <div class="social">
+              <a href="https://github.com/zackmckenna">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/zack-mckenna-77912678/">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>&ldquo;Simplifying State Machine Development with SST&rdquo;</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/kevin-baker.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Kevin Baker</p>
+            <p class="role">Principal Platform Architect</p>
+            <p class="company">Analog Devices</p>
+            <div class="social">
+              <a href="https://github.com/kevbaker">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/kevbaker/">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>&ldquo;Speedy Services with Golang and SST&rdquo;</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/karolina-hidalgo.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Karolina Hidalgo</p>
+            <p class="role">Senior Software Engineer II</p>
+            <p class="company">Endpoint</p>
+            <div class="social">
+              <a href="https://github.com/karhidle">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/karolina-hidalgo-6aa5ab1">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>Coming soon</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/dax-raad.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Dax Raad</p>
+            <p class="role">Core Team</p>
+            <p class="company">SST</p>
+            <div class="social">
+              <a href="https://github.com/thdxr">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/thdxr">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>Coming soon</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/boris-tane.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Boris Tane</p>
+            <p class="role">Founder</p>
+            <p class="company">Baselime</p>
+            <div class="social">
+              <a href="https://github.com/boristane">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/boristane">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>&ldquo;Serverless Transactional Outbox Pattern on AWS&rdquo;</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/manitej-pratha.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Manitej Pratha</p>
+            <p class="role">Core Team</p>
+            <p class="company">SST</p>
+            <div class="social">
+              <a href="https://github.com/manitej66">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/maniteja-pratha-2a1469197/">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>Coming soon</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img
+            class="pic"
+            src="/assets/speakers/frank-wang.jpeg"
+            alt=""
+          />
+          <div class="speaker-left">
+            <p class="name">Frank Wang</p>
+            <p class="role">Core Team</p>
+            <p class="company">SST</p>
+            <div class="social">
+              <a href="http://github.com/fwang">
+                <img src="/assets/github-orange.svg" alt="" width="30" />
+              </a>
+              <a href="https://www.linkedin.com/in/fanjiewang/">
+                <img src="/assets/linkedin.svg" alt="" width="30" />
+              </a>
+            </div>
+          </div>
+          <div class="btm">
+            <p>Talk:</p>
+            <p>Coming soon</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="speakers">
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/albert-hoxha.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Albert Hoxha</p>
-          <p class="role">Software engineer</p>
-          <p class="company">Shell Recharge Solutions</p>
-          <div class="social">
-            <a href="https://github.com/alberthoxha97">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/albert-hoxha-3045b8174">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
+      <h2 class="videos-title" id="features">What&apos;s in v1</h2>
+      <div class="videos">
+        <div>
+          <div class="video">
+            <div>
+              <iframe src="https://www.youtube-nocookie.com/embed/pfMeaPyPydo?autoplay=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;mute=1&amp;muted=1" frameborder="0" allow="modestbranding; encrypted-media"></iframe>
+            </div>
+            <p>Built-in editor support</p>
           </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>&ldquo;Why SST is a natural choice for developers&rdquo;</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/luke-hedger.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Luke Hedger</p>
-          <p class="role">Software Engineer</p>
-          <p class="company">The LEGO Group</p>
-          <div class="social">
-            <a href="https://github.com/lukehedger">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.twitter.com/level_out/">
-              <img src="/assets/twitter.svg" alt="" width="30" />
-            </a>
+          <div class="video">
+            <div>
+              <iframe src="https://www.youtube-nocookie.com/embed/QvNMM5hpO3M?autoplay=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;mute=1&amp;muted=1" frameborder="0" allow="modestbranding; encrypted-media"></iframe>
+            </div>
+            <p>A web-based dashboard</p>
           </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>Coming soon</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/tamara-dottin.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Tamara Dottin</p>
-          <p class="role">Founding Engineer</p>
-          <p class="company">Acre</p>
-          <div class="social">
-            <a href="https://twitter.com/tamaradottin">
-              <img src="/assets/twitter.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/tamara-dottin-bb4bb68">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
+          <div class="video">
+            <div>
+              <iframe src="https://www.youtube-nocookie.com/embed/2w4A06IsBlU?autoplay=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;mute=1&amp;muted=1" frameborder="0" allow="modestbranding; encrypted-media"></iframe>
+            </div>
+            <p>Live Lambda Development</p>
           </div>
+          <div class="spacer">&nbsp;</div>
         </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>&ldquo;Managing environments with ease using SST&rdquo;</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/zachary-mckenna.png"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Zachary McKenna</p>
-          <p class="role">Software Engineer</p>
-          <p class="company">Comcast</p>
-          <div class="social">
-            <a href="https://github.com/zackmckenna">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/zack-mckenna-77912678/">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
-          </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>&ldquo;Simplifying State Machine Development with SST&rdquo;</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/kevin-baker.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Kevin Baker</p>
-          <p class="role">Principal Platform Architect</p>
-          <p class="company">Analog Devices</p>
-          <div class="social">
-            <a href="https://github.com/kevbaker">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/kevbaker/">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
-          </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>&ldquo;Speedy Services with Golang and SST&rdquo;</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/karolina-hidalgo.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Karolina Hidalgo</p>
-          <p class="role">Senior Software Engineer II</p>
-          <p class="company">Endpoint</p>
-          <div class="social">
-            <a href="https://github.com/karhidle">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/karolina-hidalgo-6aa5ab1">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
-          </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>Coming soon</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/dax-raad.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Dax Raad</p>
-          <p class="role">Core Team</p>
-          <p class="company">SST</p>
-          <div class="social">
-            <a href="https://github.com/thdxr">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/thdxr">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
-          </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>Coming soon</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/boris-tane.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Boris Tane</p>
-          <p class="role">Founder</p>
-          <p class="company">Baselime</p>
-          <div class="social">
-            <a href="https://github.com/boristane">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/boristane">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
-          </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>&ldquo;Serverless Transactional Outbox Pattern on AWS&rdquo;</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/manitej-pratha.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Manitej Pratha</p>
-          <p class="role">Core Team</p>
-          <p class="company">SST</p>
-          <div class="social">
-            <a href="https://github.com/manitej66">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/maniteja-pratha-2a1469197/">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
-          </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>Coming soon</p>
-        </div>
-      </div>
-      <div class="speaker">
-        <img
-          class="pic"
-          src="/assets/speakers/frank-wang.jpeg"
-          alt=""
-        />
-        <div class="speaker-left">
-          <p class="name">Frank Wang</p>
-          <p class="role">Core Team</p>
-          <p class="company">SST</p>
-          <div class="social">
-            <a href="http://github.com/fwang">
-              <img src="/assets/github-orange.svg" alt="" width="30" />
-            </a>
-            <a href="https://www.linkedin.com/in/fanjiewang/">
-              <img src="/assets/linkedin.svg" alt="" width="30" />
-            </a>
-          </div>
-        </div>
-        <div class="btm">
-          <p>Talk:</p>
-          <p>Coming soon</p>
-        </div>
-      </div>
-    </div>
-
-    <h2 class="videos-title" id="features">What&apos;s in v1</h2>
-    <div class="videos">
-      <div>
-        <div class="video">
-          <div>
-            <iframe src="https://www.youtube-nocookie.com/embed/pfMeaPyPydo?autoplay=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;mute=1&amp;muted=1" frameborder="0" allow="modestbranding; encrypted-media"></iframe>
-          </div>
-          <p>Built-in editor support</p>
-        </div>
-        <div class="video">
-          <div>
-            <iframe src="https://www.youtube-nocookie.com/embed/QvNMM5hpO3M?autoplay=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;mute=1&amp;muted=1" frameborder="0" allow="modestbranding; encrypted-media"></iframe>
-          </div>
-          <p>A web-based dashboard</p>
-        </div>
-        <div class="video">
-          <div>
-            <iframe src="https://www.youtube-nocookie.com/embed/2w4A06IsBlU?autoplay=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;mute=1&amp;muted=1" frameborder="0" allow="modestbranding; encrypted-media"></iframe>
-          </div>
-          <p>Live Lambda Development</p>
-        </div>
-        <div class="spacer">&nbsp;</div>
       </div>
     </div>
 
     <div class="cta" id="register">
-      <h2>We&apos;ll see you there!</h2>
-      <div class="email-octopus-form-wrapper">
-        <p class="email-octopus-success-message"></p>
-        <p class="email-octopus-error-message"></p>
-        <form method="post" action="https://emailoctopus.com/lists/7fdf6962-ca52-11ec-9258-0241b9615763/members/external-add" class="email-octopus-form">
-          <div class="email-octopus-form-row">
-            <input type="text" name="firstName" placeholder="First name" class="email-octopus-first-name" value="">
-          </div>
-          <div class="email-octopus-form-row">
-            <input type="text" name="lastName" placeholder="Last name" class="email-octopus-last-name" value="">
-          </div>
-          <div class="email-octopus-form-row">
-            <input type="email" name="emailAddress" placeholder="Work email" class="email-octopus-email-address">
-          </div>
-          <div class="email-octopus-form-row-hp" aria-hidden="true">
-            <input type="text" name="hp7fdf6962-ca52-11ec-9258-0241b9615763" tabindex="-1" autocomplete="nope">
-          </div>
-          <div class="email-octopus-form-row-subscribe">
-            <input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="/thanks.html">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+      <div class="content-wrapper">
+        <h2>We&apos;ll see you there!</h2>
+        <div class="email-octopus-form-wrapper">
+          <p class="email-octopus-success-message"></p>
+          <p class="email-octopus-error-message"></p>
+          <form method="post" action="https://emailoctopus.com/lists/7fdf6962-ca52-11ec-9258-0241b9615763/members/external-add" class="email-octopus-form">
+            <div class="email-octopus-form-row">
+              <input type="text" name="firstName" placeholder="First name" class="email-octopus-first-name" value="">
+            </div>
+            <div class="email-octopus-form-row">
+              <input type="text" name="lastName" placeholder="Last name" class="email-octopus-last-name" value="">
+            </div>
+            <div class="email-octopus-form-row">
+              <input type="email" name="emailAddress" placeholder="Work email" class="email-octopus-email-address">
+            </div>
+            <div class="email-octopus-form-row-hp" aria-hidden="true">
+              <input type="text" name="hp7fdf6962-ca52-11ec-9258-0241b9615763" tabindex="-1" autocomplete="nope">
+            </div>
+            <div class="email-octopus-form-row-subscribe">
+              <input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="/thanks.html">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <img src="/assets/cta-vector.svg" alt="" width="500" />
       </div>
-      <img src="/assets/cta-vector.svg" alt="" width="500" />
     </div>
 
-    <footer class="navbar">
-      <a class="logo" href="/">
-        <img src="/assets/sst.svg" alt="" />
-      </a>
-      <div class="nav-right">
-        <a class="social" href="https://github.com/serverless-stack/serverless-stack">
-          <img src="/assets/github.svg" alt="" width="180" />
+    <div class="content-wrapper">
+      <footer class="navbar">
+        <a class="logo" href="/">
+          <img src="/assets/sst.svg" alt="" />
         </a>
-        <a class="social" href="https://serverless-stack.com/slack">
-          <img src="/assets/slack.svg" alt="" width="30" />
-        </a>
-        <a class="link" href="#speakers">Speakers</a>
-        <a class="link" href="#features">SST v1</a>
-      </div>
-    </nav>
+        <div class="nav-right">
+          <a class="social" href="https://github.com/serverless-stack/serverless-stack">
+            <img src="/assets/github.svg" alt="" width="180" />
+          </a>
+          <a class="social" href="https://serverless-stack.com/slack">
+            <img src="/assets/slack.svg" alt="" width="30" />
+          </a>
+          <a class="link" href="#speakers">Speakers</a>
+          <a class="link" href="#features">SST v1</a>
+        </div>
+      </footer>
+    </div>
     <script>
       // Set the date we're counting down to
       let countDownDate = new Date("May 17, 2022 09:00:00 AM PDT").getTime();
@@ -431,15 +428,6 @@
       // Update the count down every 1 second
       updateCountDown();
       let x = setInterval(updateCountDown, 1000);
-
-      function nav() {
-        let x = document.getElementById("menu-btm");
-        if (x.style.display === "flex") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "flex";
-        }
-      }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/formEmbed.js?1519058398"></script>

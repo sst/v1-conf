@@ -414,6 +414,8 @@ input:active {
   margin: 20px auto;
   position: relative;
   height: 629px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

@@ -130,6 +130,7 @@ a {
   right: 30px;
   top: 0;
   position: absolute;
+  pointer-events: none;
 }
 
 .countdown {
@@ -406,6 +407,7 @@ input:active {
   position: absolute;
   bottom: -64px;
   right: -64px;
+  pointer-events: none;
 }
 
 /* Thanks page */

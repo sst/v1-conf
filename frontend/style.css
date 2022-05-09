@@ -1,7 +1,12 @@
 :root {
   --speaker-margin: 40px;
   --speaker-image-offset: 30px;
-  --speaker-image-width: 140px;
+  --speaker-image-width: 124px;
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  :root {
+    --speaker-image-width: 100px;
+  }
 }
 
 * {
@@ -116,6 +121,7 @@ a {
 .hero-left > hr {
   border: 2px solid #395c6b;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-left > p {
@@ -232,6 +238,7 @@ a {
 
 .speaker .header {
   display: flex;
+  align-items: flex-start;
 }
 
 .pic {
@@ -248,6 +255,7 @@ a {
   margin-left: -12px;
   padding: 18px 15px 0 0;
   text-align: left;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -259,8 +267,9 @@ a {
 }
 
 .role {
-  margin: 0 0 6px;
+  margin: 0 0 5px;
   opacity: 60%;
+  font-size: 14px;
 }
 
 .company {
@@ -272,7 +281,8 @@ a {
 .speaker .social {
   padding-top: 10px;
   padding-bottom: 28px;
-  line-height: 1;
+  display: flex;
+  gap: 10px;
 }
 .speaker .social a {
   display: inline-block;
@@ -453,7 +463,16 @@ body.blank {
   font-size: 24px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 800px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-right-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
   body {
   }
   .navbar {
@@ -531,48 +550,45 @@ body.blank {
     font-size: 18px;
   }
 
+  .speakers {
+    margin: 45px auto 0;
+    padding: 0 15px;
+  }
+  .speaker {
+    margin: 45px 0 0 30px;
+  }
+  .speaker-left {
+    margin-left: -18px;
+    display: block;
+  }
   .speaker-title {
     margin: 75px auto 0;
     font-size: 45px;
     text-align: center;
   }
-  .speakers {
-    display: block;
-    margin: 60px 15px 0 45px;
-  }
-  .speaker {
-    margin: 0 0 60px;
-    width: auto;
-    padding: 15px 10px 10px;
-  }
-  .speaker-left {
-    margin-left: 80px;
-  }
   .name {
     margin: 0 0 2px;
-    font-size: 15px;
+    font-size: 14px;
   }
   .role {
     margin: 0 0 5px;
-    font-size: 15px;
+    font-size: 14px;
   }
   .company {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
   }
   .speaker .social {
-    margin-top: 10px;
+    margin-top: 8px;
+    padding: 0;
   }
   .btm {
-    padding: 12px 10px 0;
+    margin-top: 0;
   }
   .btm p:first-child {
     margin: 0;
   }
   .pic {
-    width: 110px;
-    left: -2rem;
-    top: -1.5rem;
   }
 
   .videos-title {

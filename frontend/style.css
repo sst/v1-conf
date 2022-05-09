@@ -210,6 +210,9 @@ a {
   font-weight: 500;
   line-height: 1.9;
 }
+.prepare > p a {
+  text-decoration: underline;
+}
 
 .speaker-title {
   margin: 150px 0 0 75px;

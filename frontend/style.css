@@ -77,6 +77,9 @@ a {
   display: block;
 }
 
+.nav-right a.links.copyright {
+  opacity: 0.4;
+}
 .nav-right a.links:hover {
   opacity: 0.7;
 }
@@ -466,7 +469,7 @@ body.blank {
   font-size: 24px;
 }
 
-@media (min-width: 480px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .nav-right {
     display: none;
   }
@@ -487,12 +490,6 @@ body.blank {
     height: 30px;
   }
 
-  .nav-right {
-    display: none;
-  }
-  .nav-right-mobile {
-    display: block;
-  }
   .nav-right-mobile a {
     font-size: 16px;
   }

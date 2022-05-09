@@ -1,3 +1,9 @@
+:root {
+  --speaker-margin: 40px;
+  --speaker-image-offset: 30px;
+  --speaker-image-width: 140px;
+}
+
 * {
   font-family: "IBM Plex Mono", monospace;
   scroll-behavior: smooth;
@@ -208,56 +214,65 @@ a {
 }
 
 .speakers {
-  margin: 75px 75px 0;
+  margin: 75px calc(75px - var(--speaker-margin))
+          0 calc(75px + var(--speaker-image-offset) - var(--speaker-margin));
   text-align: center;
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .speaker {
-  margin: 30px auto;
+  margin: 40px;
   background-color: #fffbf9;
   border-radius: 15px;
-  padding: 18px;
+  box-sizing: border-box;
   position: relative;
-  width: 435px;
+  flex: 1 1 calc(1/2 * 100% - 2 * var(--speaker-margin));
+}
+
+.speaker .header {
+  display: flex;
 }
 
 .pic {
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  width: 30%;
+  position: relative;
+  top: calc(-1 * var(--speaker-image-offset));
+  left: calc(-1 * var(--speaker-image-offset));
+  width: var(--speaker-image-width);
   border-radius: 15px;
   aspect-ratio: 3/4;
   object-fit: cover;
 }
 
 .speaker-left {
-  margin-left: 112px;
+  margin-left: -12px;
+  padding: 18px 15px 0 0;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .name {
-  margin: 0 0 5px;
-  font-size: 27px;
+  margin: 0 0 3px;
   font-weight: 500;
 }
 
 .role {
-  margin: 0 0 5px;
+  margin: 0 0 6px;
   opacity: 60%;
-  font-size: 15px;
 }
 
 .company {
   margin: 0;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .speaker .social {
-  margin-top: 27px;
+  padding-top: 10px;
+  padding-bottom: 28px;
+  line-height: 1;
 }
 .speaker .social a {
   display: inline-block;
@@ -267,14 +282,16 @@ a {
 }
 
 .btm {
-  padding: 16px 20px 0;
+  margin-top: -13px;
+  padding: 0 20px 15px;
   text-align: left;
 }
 .btm p:first-child {
+  margin: 0;
   opacity: 0.6;
 }
 .btm p:last-child {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   line-height: 1.6;
 }
 
@@ -526,28 +543,31 @@ body.blank {
   .speaker {
     margin: 0 0 60px;
     width: auto;
-    padding: 10px;
+    padding: 15px 10px 10px;
   }
   .speaker-left {
     margin-left: 80px;
   }
   .name {
-    margin: 0 0 4px;
-    font-size: 1.2rem;
+    margin: 0 0 2px;
+    font-size: 15px;
   }
   .role {
-    margin: 0 0 2px;
-    font-size: 0.9rem;
+    margin: 0 0 5px;
+    font-size: 15px;
   }
   .company {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 18px;
   }
   .speaker .social {
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .btm {
-    padding: 10px 10px 0;
+    padding: 12px 10px 0;
+  }
+  .btm p:first-child {
+    margin: 0;
   }
   .pic {
     width: 110px;

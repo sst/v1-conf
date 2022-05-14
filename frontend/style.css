@@ -96,15 +96,14 @@ a {
 }
 
 .hero {
-  margin: 20px auto;
+  margin: 20px auto 0;
   position: relative;
-  height: 629px;
   display: flex;
   align-items: center;
 }
 
 .hero-left > h3 {
-  margin: 0 0 0 60px;
+  margin: 120px 0 0 60px;
   color: #e27152;
   font-size: 52px;
   font-weight: 500;
@@ -148,8 +147,30 @@ a {
   pointer-events: none;
 }
 
+.stream {
+  margin: 75px auto 0;
+  padding: 0 30px;
+  max-width: 930px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.stream .wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.stream iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .countdown {
-  margin: 30px 30px 0;
+  margin: 150px 30px 0;
   text-align: center;
 }
 .countdown > p {
@@ -565,6 +586,10 @@ body.blank {
     margin: 0;
     font-size: 16px;
     padding: 15px 20px;
+  }
+  .stream {
+    margin-top: 45px;
+    padding: 0 15px;
   }
   .countdown {
     margin: 75px 0 0;

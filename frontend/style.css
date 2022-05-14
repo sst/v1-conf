@@ -148,7 +148,7 @@ a {
 }
 
 .stream {
-  margin: 0 auto 0;
+  margin: 75px auto 0;
   padding: 75px 30px 0;
   max-width: 930px;
   border-radius: 15px;
@@ -170,7 +170,7 @@ a {
 }
 
 .countdown {
-  margin: 150px 30px 0;
+  margin: 30px 30px 0;
   text-align: center;
 }
 .countdown > p {
@@ -588,11 +588,15 @@ body.blank {
     padding: 15px 20px;
   }
   .stream {
+    margin-top:0;
     padding: 45px 15px 0;
   }
   .countdown {
-    margin: 75px 0 0;
+    margin: 30px 0 0;
     padding: 0 15px;
+  }
+  .countdown > p {
+    font-size: 16px;
   }
   .boxes {
     gap: 7px;

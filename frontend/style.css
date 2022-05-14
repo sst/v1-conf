@@ -148,8 +148,8 @@ a {
 }
 
 .stream {
-  margin: 75px auto 0;
-  padding: 0 30px;
+  margin: 0 auto 0;
+  padding: 75px 30px 0;
   max-width: 930px;
   border-radius: 15px;
   overflow: hidden;
@@ -588,8 +588,7 @@ body.blank {
     padding: 15px 20px;
   }
   .stream {
-    margin-top: 45px;
-    padding: 0 15px;
+    padding: 45px 15px 0;
   }
   .countdown {
     margin: 75px 0 0;

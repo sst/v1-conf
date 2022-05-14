@@ -563,6 +563,8 @@ body.blank {
   }
   .hero-left > a {
     margin: 0;
+    font-size: 16px;
+    padding: 15px 20px;
   }
   .countdown {
     margin: 75px 0 0;

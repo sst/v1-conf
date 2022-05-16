@@ -96,24 +96,17 @@ a {
 }
 
 .hero {
-  margin: 20px auto 0;
+  margin: 60px auto 0;
   position: relative;
-  display: flex;
-  align-items: center;
 }
 
-.hero-left > h3 {
-  margin: 120px 0 0 60px;
-  color: #e27152;
-  font-size: 52px;
-  font-weight: 500;
-  line-height: 1.3;
-  letter-spacing: -2px;
+.hero .content-wrapper {
 }
 
 .hero-left > h1 {
-  margin: 0 0 0 60px;
-  font-size: 90px;
+  margin: 0 0 12px 0;
+  text-align: center;
+  font-size: 60px;
   color: #395c6b;
   line-height: 1.3;
   font-weight: 700;
@@ -121,15 +114,17 @@ a {
 }
 
 .hero-left > hr {
-  border: 2px solid #395c6b;
-  width: 100%;
+  margin: 0 auto 22px;
+  border-top: 3px solid #395c6b;
+  max-width: 500px;
   box-sizing: border-box;
 }
 
 .hero-left > p {
-  margin: 40px 0 0 60px;;
+  margin: 0;
   color: #395c6b;
   font-size: 24px;
+  text-align: center;
 }
 
 .hero-left > a {
@@ -145,14 +140,18 @@ a {
   top: 0;
   position: absolute;
   pointer-events: none;
+  z-index: 0;
 }
 
 .stream {
-  margin: 75px auto 0;
-  padding: 75px 30px 0;
-  max-width: 930px;
+  margin: 0 auto 0;
+  padding: 50px 30px 0;
+  max-width: 100%;
+  box-sizing: border-box;
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 .stream .wrapper {
   position: relative;
@@ -532,6 +531,10 @@ body.blank {
   vertical-align: middle;
 }
 
+.content-wrapper.footer {
+  border-top: 3px solid #E27152;
+}
+
 @media (max-width: 800px) {
   .nav-right {
     display: none;
@@ -579,7 +582,7 @@ body.blank {
     letter-spacing: -2px;
   }
   .hero-left > p {
-    margin: 20px 0 30px;
+    margin: 20px 0 0;
     font-size: 20px;
   }
   .hero-left > a {
@@ -589,7 +592,7 @@ body.blank {
   }
   .stream {
     margin-top:0;
-    padding: 45px 15px 0;
+    padding: 45px 0 0;
   }
   .countdown {
     margin: 30px 0 0;
@@ -679,7 +682,7 @@ body.blank {
     font-size: 45px;
   }
   .videos {
-    padding: 0 15px;
+    padding: 0 15px 45px;
   }
   .videos > div {
     padding: 0;

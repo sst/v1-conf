@@ -53,7 +53,7 @@
           </a>
           <a class="links" href="#speakers">Speakers</a>
           <a class="links" href="https://serverless-stack.com">About SST</a>
-          <a href="#register" class="reg-btn">Register</a>
+          <a href="#stream" class="reg-btn">Watch Live</a>
         </div>
         <div class="nav-right-mobile">
           <a class="links" href="#speakers">Speakers</a>
@@ -61,48 +61,21 @@
       </nav>
 
       <div class="hero">
-        <div class="hero-left">
-          <h3>May 17, 9am PDT</h3>
+        <div class="content-wrapper hero-left">
           <h1>SST 1.0 Conf</h1>
           <hr />
-          <p>
-            A virtual event celebrating SST&apos;s v1 launch!
-          </p>
-          <a href="#register" class="reg-btn">Register</a>
+          <p>A virtual event celebrating SST&apos;s v1 launch!</p>
+          <div id="stream" class="stream">
+            <div class="wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/6FzLjpMYcu8?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
         <img src="/assets/hero1.svg" alt="" />
       </div>
 
-      <div id="stream" class="stream">
-        <div class="wrapper">
-          <iframe src="https://www.youtube-nocookie.com/embed/6FzLjpMYcu8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="countdown">
-        <p>Mark your calendars! The live stream is starting soon.</p>
-        <div class="boxes">
-          <p class="box">
-            <span id="days">-</span>
-            <span>days</span>
-          </p>
-          <p class="box">
-            <span id="hours">-</span>
-            <span>hours</span>
-          </p>
-          <p class="box">
-            <span id="min">-</span>
-            <span>minutes</span>
-          </p>
-          <p class="box">
-            <span id="secs">-</span>
-            <span>seconds</span>
-          </p>
-        </div>
-      </div>
-
       <div class="prepare">
-        <h2>What to expect</h2>
+        <h2>About SST 1.0 Conf</h2>
         <p>
         <b>SST 1.0 Conf</b> is the first-ever <a href="https://serverless-stack.com">Serverless Stack (SST)</a> conference! It&apos;s a free virtual event
           featuring talks from folks in the community. And a couple of us
@@ -544,36 +517,7 @@
       </div>
     </div>
 
-    <div class="cta" id="register">
-      <div class="content-wrapper">
-        <h2>Register for SST 1.0 Conf</h2>
-        <div class="email-octopus-form-wrapper">
-          <p class="email-octopus-success-message"></p>
-          <p class="email-octopus-error-message"></p>
-          <form method="post" action="https://emailoctopus.com/lists/7fdf6962-ca52-11ec-9258-0241b9615763/members/external-add" class="email-octopus-form">
-            <div class="email-octopus-form-row">
-              <input type="text" name="firstName" placeholder="First name" class="email-octopus-first-name" value="">
-            </div>
-            <div class="email-octopus-form-row">
-              <input type="text" name="lastName" placeholder="Last name" class="email-octopus-last-name" value="">
-            </div>
-            <div class="email-octopus-form-row">
-              <input type="email" name="emailAddress" placeholder="Work email" class="email-octopus-email-address">
-            </div>
-            <div class="email-octopus-form-row-hp" aria-hidden="true">
-              <input type="text" name="hp7fdf6962-ca52-11ec-9258-0241b9615763" tabindex="-1" autocomplete="nope">
-            </div>
-            <div class="email-octopus-form-row-subscribe">
-              <input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="/thanks.html">
-              <button type="submit">Submit</button>
-            </div>
-          </form>
-        </div>
-        <img src="/assets/cta-vector.svg" alt="" width="500" />
-      </div>
-    </div>
-
-    <div class="content-wrapper">
+    <div class="footer content-wrapper">
       <footer class="navbar">
         <a class="logo" href="/">
           <img src="/assets/sst.svg" alt="" />
@@ -587,36 +531,6 @@
         </div>
       </footer>
     </div>
-    <script>
-      // Set the date we're counting down to
-      let countDownDate = new Date("May 17, 2022 09:00:00 AM PDT").getTime();
-      let updateCountDown = function () {
-        // Get today's date and time
-        let now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        let distance = Math.max(0, countDownDate - now);
-
-        // Time calculations for days, hours, minutes and seconds
-        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        let hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element
-
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("min").innerHTML = minutes;
-        document.getElementById("secs").innerHTML = seconds;
-      };
-
-      // Update the count down every 1 second
-      updateCountDown();
-      let x = setInterval(updateCountDown, 1000);
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/formEmbed.js?1519058398"></script>
   </body>
